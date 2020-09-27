@@ -6,17 +6,23 @@ namespace EmpWages
     {
         static void Main(string[] args)
         {
+
             int is_full_time = 1;
+            int rate_per_hour = 20;
+            int empHrs = 0;
+            int empWage = 0;
             Random random = new Random();
             int check = random.Next(0, 2);
             if (check == is_full_time)
             {
-                Console.WriteLine("Employee is Present");
+                empHrs = 8;
             }
             else
             {
-                Console.WriteLine("Employee is Absent");
+                empHrs = 0;
             }
+            empWage = empHrs * rate_per_hour;
+            Console.WriteLine("Emp Wage : " + empWage);
         }
     }
 }
