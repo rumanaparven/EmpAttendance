@@ -4,18 +4,21 @@ namespace EmpWages
 {
     class Program
     {
+
         public const int is_part_time = 1;
         public const int is_full_time = 2;
         public const int rate_per_hour = 20;
         public const int num_of_working_days = 2;
+        public const int max_working_hrs_in_month = 10;
         static void Main(string[] args)
         {
-
             int empHrs = 0;
-            int empWage = 0;
-            int totalEmpWage = 0;
-            for (int day = 0; day < num_of_working_days; day++)
-            { 
+            int totalWorkingDays = 0;
+            int totalEmpHrs = 0;
+            while (totalEmpHrs <= max_working_hrs_in_month && totalWorkingDays < num_of_working_days)
+            {
+
+                totalWorkingDays++;
                 Random random = new Random();
                 int check = random.Next(0, 3);
                 switch (check)
@@ -30,11 +33,12 @@ namespace EmpWages
                         empHrs = 0;
                         break;
                 }
-                empWage = empHrs * rate_per_hour;
-                totalEmpWage = totalEmpWage + empWage;
-                Console.WriteLine("Emp Wage : " + empWage);
+                totalEmpHrs = totalEmpHrs + empHrs;
+                Console.WriteLine("Day#: " + totalWorkingDays + " Emp Hrs : " + empHrs);
             }
+            int totalEmpWage = totalEmpHrs * rate_per_hour;
             Console.WriteLine("Total Emp Wage : " + totalEmpWage);
+        
         }
     }
 }
