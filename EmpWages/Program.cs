@@ -7,17 +7,14 @@ namespace EmpWages
 
         public const int is_part_time = 1;
         public const int is_full_time = 2;
-        public const int rate_per_hour = 20;
-        public const int num_of_working_days = 20;
-        public const int max_working_hrs_in_month = 100;
-        public static void CalculateEmpWages()
+        
+        public static void CalculateEmpWages(String CompanyName, int EmpRatePerHour, int MaxNumberOfWrkinDays, int MaxHrPerMonth)
         {
-            int empHrs = 0;
             int totalWorkingDays = 0;
             int totalEmpHrs = 0;
-            while (totalEmpHrs <= max_working_hrs_in_month && totalWorkingDays < num_of_working_days)
+            while (totalEmpHrs <= MaxHrPerMonth && totalWorkingDays < MaxNumberOfWrkinDays)
             {
-
+                int empHrs = 0;
                 totalWorkingDays++;
                 Random random = new Random();
                 int check = random.Next(0, 3);
@@ -34,15 +31,16 @@ namespace EmpWages
                         break;
                 }
                 totalEmpHrs = totalEmpHrs + empHrs;
-                Console.WriteLine("Day#: " + totalWorkingDays + " Emp Hrs : " + empHrs);
+         
             }
-            int totalEmpWage = totalEmpHrs * rate_per_hour;
-            Console.WriteLine("Total Emp Wage : " + totalEmpWage);
+            int totalEmpWage = totalEmpHrs * EmpRatePerHour;
+            Console.WriteLine("Total Emp Wage of "+CompanyName+" is : " + totalEmpWage);
         
         }
         static void Main(string[] args)
         {
-            CalculateEmpWages();
+            CalculateEmpWages("Capgemini",20,3,20);
+            CalculateEmpWages("Wipro", 20, 4, 30);
         }
     }
 }
