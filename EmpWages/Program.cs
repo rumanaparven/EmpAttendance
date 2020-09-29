@@ -8,8 +8,8 @@ namespace EmpWages
         public const int is_part_time = 1;
         public const int is_full_time = 2;
         public const int rate_per_hour = 20;
-        public const int num_of_working_days = 2;
-        public const int max_working_hrs_in_month = 10;
+        public const int num_of_working_days = 20;
+        public const int max_working_hrs_in_month = 100;
         static void Main(string[] args)
         {
             int empHrs = 0;
