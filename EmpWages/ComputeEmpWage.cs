@@ -16,6 +16,7 @@ namespace EmpWages
         private int MaxNumberOfWrkinDays;
         private int MaxHrPerMonth;
         private int totalEmpWage;
+        private int dailywage;
 
         public ComputeEmpWage(String CompanyName, int EmpRatePerHour, int MaxNumberOfWrkinDays, int MaxHrPerMonth)
         {
@@ -35,6 +36,15 @@ namespace EmpWages
         public void SetTotalEmpWage(int totalEmpWage)
         {
             this.totalEmpWage = totalEmpWage;
+        }
+
+        public int GetDailywage()
+        {
+            return this.dailywage;
+        }
+        public void SetDailywage(int dailywage)
+        {
+            this.dailywage = dailywage;
         }
         public string ToString()
         {
