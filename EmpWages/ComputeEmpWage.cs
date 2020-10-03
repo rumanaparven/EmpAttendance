@@ -32,6 +32,14 @@ namespace EmpWages
         {
             return this.totalEmpWage;
         }
+        public void SetTotalEmpWage(int totalEmpWage)
+        {
+            this.totalEmpWage = totalEmpWage;
+        }
+        public string ToString()
+        {
+            return "The total employee wage for " + CompanyName + " is : " + totalEmpWage;
+        }
 
     }
 }

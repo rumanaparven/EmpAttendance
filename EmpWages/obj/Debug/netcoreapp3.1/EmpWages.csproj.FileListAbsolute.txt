@@ -11,3 +11,16 @@ C:\Users\USER\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.cs
 C:\Users\USER\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.dll
 C:\Users\USER\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.pdb
 C:\Users\USER\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.genruntimeconfig.cache
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\bin\Debug\netcoreapp3.1\EmpWages.exe
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\bin\Debug\netcoreapp3.1\EmpWages.deps.json
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\bin\Debug\netcoreapp3.1\EmpWages.runtimeconfig.json
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\bin\Debug\netcoreapp3.1\EmpWages.runtimeconfig.dev.json
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\bin\Debug\netcoreapp3.1\EmpWages.dll
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\bin\Debug\netcoreapp3.1\EmpWages.pdb
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.csprojAssemblyReference.cache
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.AssemblyInfoInputs.cache
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.AssemblyInfo.cs
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.csproj.CoreCompileInputs.cache
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.dll
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.pdb
+C:\Users\RUMANA\source\repos\EmpWages\EmpWages\obj\Debug\netcoreapp3.1\EmpWages.genruntimeconfig.cache

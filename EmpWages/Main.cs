@@ -11,8 +11,10 @@ namespace EmpWages
 
         public void CalculateEmpWages(String CompanyName, int EmpRatePerHour, int MaxNumberOfWrkinDays, int MaxHrPerMonth)
         {
+            List<ComputeEmpWage> list = new List<ComputeEmpWage>();
            
             ComputeEmpWage ce = new ComputeEmpWage(CompanyName, EmpRatePerHour, MaxNumberOfWrkinDays, MaxHrPerMonth);
+            list.Add(ce);
             int totalWorkingDays = 0;
             int totalEmpHrs = 0;
             Console.WriteLine(CompanyName + " ");
@@ -39,7 +41,9 @@ namespace EmpWages
             }
 
             int TotalEmpWage = totalEmpHrs * EmpRatePerHour;
-            Console.WriteLine("The total employee wage for " + CompanyName + " is : " + TotalEmpWage);
+            ce.SetTotalEmpWage(TotalEmpWage);
+            Console.WriteLine(ce.ToString());
+            
         }
         
 
